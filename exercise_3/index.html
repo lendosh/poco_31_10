@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <title>POCO_31_10_3</title>
+</head>
+<body class="h-[100vh] w-full flex flex-col overflow-hidden">
+<div class="pt-8 px-4 w-full flex flex-col items-start justify-center">
+    <label for="city">Enter a city name:</label>
+    <div class="flex">
+        <input
+                class="block pl-2 py-6 mr-auto w-[600px] text-xl
+                text-black border border-black rounded-l-md"
+                type="text"
+                id="city"
+                name="city"
+                required
+        >
+        <button
+                type="button"
+                onclick="fetchWeather()"
+                class="border border-black rounded-r-md bg-slate-200 px-3 py-2"
+        >
+            Get weather
+        </button>
+    </div>
+</div>
+<div class="grid grid-cols-4 gap-x-4 gap-y-2 pt-4 px-8" id="weather-list">
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
